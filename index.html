@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ماريا — فنانة الشعر</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a39a79c626.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- ── NAV ── -->
+    <nav class="nav-wrap" id="nav">
+      <div class="nav-logo">
+        <span class="nav-logo-en">Maria</span>
+        <span class="nav-logo-ar">مصففة شعر</span>
+      </div>
+      <div class="nav-links" style="display: none" id="desknav">
+        <a href="#services">خدماتي</a>
+        <a href="#gallery">اعمالي</a>
+        <a href="#about">عني</a>
+        <a href="#booking">احجزي</a>
+      </div>
+      <div class="ham" id="ham" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <script>
+      // Show desktop nav on md+
+      function checkNav() {
+        document.getElementById("desknav").style.display =
+          window.innerWidth >= 768 ? "flex" : "none";
+      }
+      checkNav();
+      window.addEventListener("resize", checkNav);
+    </script>
+
+    <!-- ── DRAWER ── -->
+    <div class="drawer" id="drawer">
+      <div class="drawer-logo">Maria</div>
+      <a href="#services" onclick="closeMenu()">خدماتي</a>
+      <!-- <a href="#gallery" onclick="closeMenu()">اعمالي</a> -->
+      <!-- <a href="#about" onclick="closeMenu()">عني</a> -->
+      <a href="#booking" onclick="closeMenu()">الحجز</a>
+    </div>
+
+    <!-- ── HERO ── -->
+    <section
+      class="hero"
+      style="
+        background: linear-gradient(
+          155deg,
+          rgba(172, 172, 222, 0.09) 0%,
+          rgba(250, 248, 245, 1) 65%
+        );
+      "
+    >
+      <div
+        class="hero-blob"
+        style="
+          width: 500px;
+          height: 500px;
+          background: rgba(172, 172, 222, 0.11);
+          top: -140px;
+          left: -180px;
+        "
+      ></div>
+      <div
+        class="hero-blob"
+        style="
+          width: 260px;
+          height: 260px;
+          background: rgba(201, 201, 234, 0.09);
+          bottom: 0;
+          right: -90px;
+        "
+      ></div>
+      <!-- Image -->
+      <div class="hero-img-wrap">
+        <div class="hero-img-inner">
+          <img src="src/assets/logo.jpeg" alt="">
+        </div>
+        <div class="hero-badge">
+          <p>حاصلة على شهادات</p>
+          <strong>GATD & IATD</strong>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="eyebrow">متخصصة الشعر · الخرج · الحوطة · الرياض</div>
+        <h1>حتى يصبح شعرك <em>تحفة فنية</em></h1>
+        <p class="hero-sub">اكتشفي فن تسريحات الشعر  باحدث التقنيات وارقى التصاميم</p>
+        <div class="btn-wrap">
+          <a href="#booking" class="btn-primary">احجزي موعدك ←</a>
+          <a href="https://www.instagram.com/mariaslocks1?igsh=OTlpOWgyaGZjanN5&wa_status_inline=true" class="btn-ghost">شاهدي أعمالي</a>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- ── SERVICES ── -->
+    <section id="services" class="section">
+      <div class="section-label reveal">الخدمات</div>
+      <h2 class="reveal d1">اسعار الخرج</h2>
+      <!-- <p style="font-size:0.95rem;font-weight:300;color:var(--warm);max-width:480px;line-height:2;margin-right:auto;text-align:right;" class="reveal d2">
+    قائمة خدمات مُختارة بعناية لتُبرز جمال شعركِ — مهما كان نوعه أو طوله.
+  </p> -->
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>تسريحة عروس زواج</h3>
+
+          <div class="svc-price top-0">٥٠٠ ريال</div>
+        </div>
+        <div class="service-card reveal d2">
+          <h3>تسريحة عروس شبكة</h3>
+          <div class="svc-price">٤٥٠ ريال</div>
+        </div>
+        <div class="service-card reveal d3">
+          <h3>تسريحة سهرة</h3>
+          <div class="svc-price">٢٠٠ / ٢٥٠ / ٣٠٠ ريال</div>
+        </div>
+   
+      </div>
+    </section>
+    <section id="services" class="section">
+      <h2 class="reveal d1">اسعار الرياض والحوطة</h2>
+      <!-- <p style="font-size:0.95rem;font-weight:300;color:var(--warm);max-width:480px;line-height:2;margin-right:auto;text-align:right;" class="reveal d2">
+    قائمة خدمات مُختارة بعناية لتُبرز جمال شعركِ — مهما كان نوعه أو طوله.
+  </p> -->
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>تسريحة عروس زواج</h3>
+
+          <div class="svc-price top-0">٧٠٠
+ ريال</div>
+        </div>
+        <div class="service-card reveal d2">
+          <h3>تسريحة عروس شبكة</h3>
+          <div class="svc-price">٦٥٠ ريال</div>
+        </div>
+        <div class="service-card reveal d3">
+          <h3>تسريحة سهرة</h3>
+          <div class="svc-price">٣٠٠ / ٣٥٠ / ٤٠٠
+ ريال</div>
+        </div>
+   
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ── GALLERY ── -->
+    <!-- <section id="gallery" class="section">
+      <div class="section-label reveal">معرض الأعمال</div>
+      <h2 class="reveal d1">من أحدث <em>إبداعاتي</em></h2>
+      <p
+        style="
+          font-size: 0.95rem;
+          font-weight: 300;
+          color: var(--warm);
+          max-width: 420px;
+          line-height: 2;
+          text-align: right;
+        "
+        class="reveal d2"
+      >
+        مجموعة مختارة من أعمالي الأخيرة. كل عميلة لوحة جديدة.
+      </p>
+      <div class="gallery-grid reveal d2">
+        <div class="g-item">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <circle
+                cx="18"
+                cy="18"
+                r="16"
+                stroke="#ACACDE"
+                stroke-width="1"
+              />
+              <path
+                d="M10 26 Q18 14 26 26"
+                stroke="#ACACDE"
+                stroke-width="0.8"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>بالاياج بلاتيني</span></div>
+        </div>
+        <div class="g-item g-tall">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <rect
+                x="6"
+                y="6"
+                width="24"
+                height="24"
+                rx="1"
+                stroke="#ACACDE"
+                stroke-width="1"
+              />
+              <path
+                d="M12 18 Q18 12 24 18 Q18 24 12 18Z"
+                stroke="#ACACDE"
+                stroke-width="0.8"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>درجات النحاسي</span></div>
+        </div>
+        <div class="g-item">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <path
+                d="M18 4C10 4 6 12 6 18C6 26 10 32 18 32C26 32 30 26 30 18C30 12 26 4 18 4Z"
+                stroke="#ACACDE"
+                stroke-width="1"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>بوب كلاسيك</span></div>
+        </div>
+        <div class="g-item">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <path
+                d="M8 28 Q18 8 28 28"
+                stroke="#ACACDE"
+                stroke-width="1"
+                fill="none"
+              />
+              <circle
+                cx="18"
+                cy="16"
+                r="4"
+                stroke="#ACACDE"
+                stroke-width="0.8"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>تسريحة عروس</span></div>
+        </div>
+        <div class="g-item">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <path
+                d="M6 18 Q12 8 18 18 Q24 28 30 18"
+                stroke="#ACACDE"
+                stroke-width="1"
+                fill="none"
+              />
+              <circle cx="18" cy="18" r="3" fill="rgba(172,172,222,0.4)" />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>تموجات ناعمة</span></div>
+        </div>
+        <div class="g-item g-tall">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <circle cx="18" cy="13" r="7" stroke="#ACACDE" stroke-width="1" />
+              <path
+                d="M6 32 Q12 24 18 26 Q24 24 30 32"
+                stroke="#ACACDE"
+                stroke-width="1"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>هايلايت متعدد</span></div>
+        </div>
+        <div class="g-item">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <polygon
+                points="18,4 32,30 4,30"
+                stroke="#ACACDE"
+                stroke-width="1"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>ذوبان اللون</span></div>
+        </div>
+        <div class="g-item">
+          <div class="g-inner">
+            <svg width="36" height="36" viewBox="0 0 36 36">
+              <path
+                d="M8 8 Q18 3 28 8 Q33 18 28 28 Q18 33 8 28 Q3 18 8 8Z"
+                stroke="#ACACDE"
+                stroke-width="1"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="g-overlay"><span>تمليس احترافي</span></div>
+        </div>
+      </div>
+    </section> -->
+
+    <div class="divider"></div>
+
+
+
+    <div class="divider"></div>
+
+ 
+
+    <!-- ── BOOKING CTA ── -->
+    <section id="booking" class="cta-section">
+      <div
+        class="cta-ring"
+        style="width: min(640px, 115vw); height: min(640px, 115vw)"
+      ></div>
+      <div
+        class="cta-ring"
+        style="width: min(420px, 85vw); height: min(420px, 85vw)"
+      ></div>
+      <div class="cta-bg-text">Maria</div>
+      <div style="position: relative; z-index: 1">
+        <div
+          class="section-label reveal"
+          style="justify-content: center; flex-direction: row"
+        >
+          المواعيد
+        </div>
+        <h2 class="reveal d1" style="text-align: center">
+          مستعدة لتحوّلكِ <em>الجديد؟</em>
+        </h2>
+        <p
+          style="
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--warm);
+            max-width: 440px;
+            margin: 0 auto 2.5rem;
+            line-height: 2;
+            text-align: center;
+          "
+          class="reveal d2"
+        >
+          المواعيد محدودة أسبوعيًا. احجزي مكانكِ مبكرًا.
+        </p>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+          "
+          class="reveal d3"
+        >
+          <a href="tel:+966558297728" class="btn-primary">احجزي عبر الهاتف ←</a>
+          <div class="flex size-full justify-center gap-3.5">
+            <a
+              href="https://www.instagram.com/mariaslocks1?igsh=OTlpOWgyaGZjanN5&wa_status_inline=true"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@mariaslocks?_r=1&_t=ZS-95W3C8YMedI"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a
+              href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F%2B966558297728%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnOJBJGSpvwglTAnuJadUDBPnXq5uypRbuCYQB-Fn-GEGtvu3MbvPVlPRpBZI_aem_1TG8tmG-DLvUqyGvpbjj1g&e=AT6cEoExVRkUr7ZAduWJKoZaaUaMhK3VMnkAS-VCfgs4bg-fJH5cQNnXVNLnlULhMTg84DlFJl5UvPe6GRlqVvsNX7dPLWzEfDSXB7waag"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <!-- <a href="mailto:maria@salon.sa" class="btn-ghost">maria@salon.sa</a> -->
+        </div>
+        <!-- <p style="font-size:0.65rem;opacity:0.26;margin-top:3rem;text-align:center;" class="reveal d4">
+      الثلاثاء – السبت &nbsp;·&nbsp; ٩:٠٠ ص – ٦:٠٠ م &nbsp;·&nbsp; الرياض
+    </p> -->
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-logo">Maria</div>
+      <!-- <p>© ٢٠٢٦ ماريا — جميع الحقوق محفوظة</p> -->
+      <div class="foot-links">
+        <a
+          href="https://www.instagram.com/mariaslocks1?igsh=OTlpOWgyaGZjanN5&wa_status_inline=true"
+          >إنستغرام</a
+        >
+        <a href="https://www.tiktok.com/@mariaslocks?_r=1&_t=ZS-95W3C8YMedI"
+          >تيك توك</a
+        >
+        <a
+          href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F%2B966558297728%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnOJBJGSpvwglTAnuJadUDBPnXq5uypRbuCYQB-Fn-GEGtvu3MbvPVlPRpBZI_aem_1TG8tmG-DLvUqyGvpbjj1g&e=AT6cEoExVRkUr7ZAduWJKoZaaUaMhK3VMnkAS-VCfgs4bg-fJH5cQNnXVNLnlULhMTg84DlFJl5UvPe6GRlqVvsNX7dPLWzEfDSXB7waag"
+          >واتساب</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      // Nav scroll
+      window.addEventListener("scroll", () => {
+        document
+          .getElementById("nav")
+          .classList.toggle("scrolled", window.scrollY > 30);
+      });
+
+      // Mobile menu
+      let menuOpen = false;
+      function toggleMenu() {
+        menuOpen = !menuOpen;
+        document.getElementById("ham").classList.toggle("open", menuOpen);
+        document.getElementById("drawer").classList.toggle("open", menuOpen);
+      }
+      function closeMenu() {
+        menuOpen = false;
+        document.getElementById("ham").classList.remove("open");
+        document.getElementById("drawer").classList.remove("open");
+      }
+
+      // Scroll reveal
+      const obs = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("in");
+          }),
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+    </script>
+  </body>
+</html>
